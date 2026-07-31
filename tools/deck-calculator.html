@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Deck Board Calculator — Boards, Joists &amp; Screws | Estimora</title>
+<meta name="description" content="How many deck boards a rectangular deck needs, including the gap between boards, plus joist count at your chosen spacing and the screws to fasten it all." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/deck-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/deck-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/deck-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/deck-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Deck Board Calculator — Boards, Joists &amp; Screws" />
+<meta property="og:description" content="How many deck boards a rectangular deck needs, including the gap between boards, plus joist count at your chosen spacing and the screws to fasten it all." />
+<meta property="og:url" content="https://estimora.com/tools/deck-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Deck Board Calculator",
+      "url": "https://estimora.com/tools/deck-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "How many deck boards a rectangular deck needs, including the gap between boards, plus joist count at your chosen spacing and the screws to fasten it all.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Deck Board Calculator",
+          "item": "https://estimora.com/tools/deck-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What gap should I leave between deck boards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 1/8 in for wet pressure-treated lumber, which shrinks as it dries, and 1/4 in for dry or composite boards, which do not. Zero gap is a mistake in any material — water needs somewhere to go."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many screws per deck board?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two per board at every joist crossing. A 16 ft board over joists at 16 in centres crosses 13 joists, so 26 screws — which is how a small deck quietly consumes a thousand fasteners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this include framing, posts and footings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It estimates deck boards, joists and screws. Beams, posts, footings and hardware depend on span tables and local code, so size them with a span table or have the frame designed."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">Deck boards are laid in rows, and each row occupies its own width plus the gap next to it. Get that gap wrong and you end up with a sliver board at the far edge — or a run to the lumber yard for two more boards.</span><span class="bi-zh">木平台的面板是一排排铺的，每一排占据「板宽 + 一条板缝」。板缝算错，最后一排要么剩下一条窄得难看的板，要么就得再跑一趟买两块。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Rows = deck depth ÷ (board width + gap), rounded up</span></span><span class="bi-zh"><span class="formula-line">排数 = 平台进深 ÷ (板宽 + 缝宽)，向上取整</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Boards = rows × (deck length ÷ board length, rounded up)</span></span><span class="bi-zh"><span class="formula-line">板数 = 排数 × (平台长度 ÷ 单板长度，向上取整)</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Joists = deck length ÷ joist spacing + 1</span></span><span class="bi-zh"><span class="formula-line">龙骨数 = 平台长度 ÷ 龙骨间距 + 1</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">A nominal 5/4×6 deck board is actually about 5.5 in wide, and a 2×6 is the same — always estimate on the actual width, which is what this tool uses. Gaps of 1/8 to 1/4 in allow drainage and let the boards move; wet pressure-treated lumber shrinks as it dries, so it can be laid tighter than kiln-dried or composite boards. Joist spacing of 16 in on centre suits most decking, but many composite products require 12 in when installed diagonally.</span><span class="bi-zh">名义 5/4×6 的地板实际宽约 5.5 英寸，2×6 也是同样宽度——估算必须用实际宽度，本工具即按实际宽度计算。板缝取 1/8～1/4 英寸以便排水和让木材伸缩；含水率高的防腐木干燥后会收缩，因此可以铺得比窑干木或塑木更紧。龙骨间距 16 英寸适用于大多数地板，但不少塑木产品在斜铺时要求 12 英寸。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">What gap should I leave between deck boards?</span><span class="bi-zh">木平台板之间应该留多大缝？</span></summary>
+          <p><span class="bi-en">About 1/8 in for wet pressure-treated lumber, which shrinks as it dries, and 1/4 in for dry or composite boards, which do not. Zero gap is a mistake in any material — water needs somewhere to go.</span><span class="bi-zh">含水率高的防腐木留约 1/8 英寸，因为干燥后会收缩；已干燥的木材或塑木留 1/4 英寸。任何材料都不应该零缝——水总得有地方排走。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">How many screws per deck board?</span><span class="bi-zh">每块面板要打多少颗螺钉？</span></summary>
+          <p><span class="bi-en">Two per board at every joist crossing. A 16 ft board over joists at 16 in centres crosses 13 joists, so 26 screws — which is how a small deck quietly consumes a thousand fasteners.</span><span class="bi-zh">每块板在每根龙骨交叉处打 2 颗。16 英尺长的板、龙骨间距 16 英寸，会跨过 13 根龙骨，即 26 颗——一个小平台就这样悄无声息地吃掉上千颗螺钉。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Does this include framing, posts and footings?</span><span class="bi-zh">包含龙骨架、立柱和基础吗？</span></summary>
+          <p><span class="bi-en">It estimates deck boards, joists and screws. Beams, posts, footings and hardware depend on span tables and local code, so size them with a span table or have the frame designed.</span><span class="bi-zh">只估算面板、龙骨和螺钉。梁、立柱、基础和五金件取决于跨度表和当地规范，请查跨度表或请人做结构设计。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="concrete-calculator.html"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></a></li>
+        <li><a href="paint-calculator.html"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></a></li>
+        <li><a href="tile-calculator.html"><span class="bi-en">Tile &amp; Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="roofing-calculator.html"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></a></li>
+        <li><a href="fence-calculator.html"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></a></li>
+        <li><a href="gravel-calculator.html"><span class="bi-en">Gravel, Sand &amp; Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></a></li>
+        <li><a href="stair-calculator.html"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></a></li>
+        <li><a href="brick-calculator.html"><span class="bi-en">Brick &amp; Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "deck";</script>
+<script src="../app.js"></script>
+</body>
+</html>
