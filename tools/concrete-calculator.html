@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Concrete Calculator — Slabs, Footings &amp; Columns | Estimora</title>
+<meta name="description" content="Work out concrete volume in cubic yards or cubic metres for a slab, footing or round column, then convert it into 80 lb, 60 lb, 40 lb, 20 kg or 25 kg bags. Free, in-browser, feet-and-inches or metric." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/concrete-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/concrete-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/concrete-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/concrete-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Concrete Calculator — Slabs, Footings &amp; Columns" />
+<meta property="og:description" content="Work out concrete volume in cubic yards or cubic metres for a slab, footing or round column, then convert it into 80 lb, 60 lb, 40 lb, 20 kg or 25 kg bags. Free, in-browser, feet-and-inches or metric." />
+<meta property="og:url" content="https://estimora.com/tools/concrete-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Concrete Calculator",
+      "url": "https://estimora.com/tools/concrete-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Work out concrete volume in cubic yards or cubic metres for a slab, footing or round column, then convert it into 80 lb, 60 lb, 40 lb, 20 kg or 25 kg bags. Free, in-browser, feet-and-inches or metric.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Concrete Calculator",
+          "item": "https://estimora.com/tools/concrete-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many 80 lb bags of concrete are in a cubic yard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cubic yard is 27 ft³ and an 80 lb bag yields about 0.60 ft³, so it takes 45 bags — before any waste allowance. That is roughly 3,600 lb of material, which is why most people switch to ready-mix well before this point."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How thick should a concrete slab be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four inches (100 mm) is the usual thickness for a patio, shed base or residential walkway; driveways carrying vehicles are commonly poured at five to six inches (125–150 mm). Thickness affects volume linearly, so going from 4 in to 6 in adds 50% to your material cost. Structural slabs should be specified by an engineer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I add extra for spillage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A 5–10% allowance covers uneven subgrade, spillage and slight over-excavation of footings. Footings dug by hand often need more, because the trench walls are rarely perfectly straight."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">Concrete is the material people most often buy twice, because a slab that looks small on paper swallows an astonishing number of bags. This calculator turns your dimensions straight into volume and then into whole bags — or into the cubic yards you would order from a ready-mix truck.</span><span class="bi-zh">混凝土是最容易买错量的材料——图纸上不起眼的一块地坪，实际会吃掉惊人的袋数。这个计算器把你的尺寸直接换算成体积，再换算成整袋数量，或者换算成向搅拌车下单时使用的立方码／立方米。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Slab volume = length × width × thickness</span></span><span class="bi-zh"><span class="formula-line">地坪体积 = 长 × 宽 × 厚</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Round column volume = π × (diameter ÷ 2)² × height</span></span><span class="bi-zh"><span class="formula-line">圆柱体积 = π × (直径 ÷ 2)² × 高</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Bags = volume × (1 + waste) ÷ bag yield, rounded up</span></span><span class="bi-zh"><span class="formula-line">袋数 = 体积 × (1 + 损耗) ÷ 每袋产出量，向上取整</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">Bag yields follow the figures printed by pre-mixed concrete manufacturers: an 80 lb bag yields about 0.60 ft³, a 60 lb bag about 0.45 ft³ and a 40 lb bag about 0.30 ft³. Ready-mix suppliers normally sell in whole or half cubic yards and usually apply a short-load fee below about one yard, so for anything larger than roughly 1 yd³ (about 45 eighty-pound bags) it is worth pricing a delivery.</span><span class="bi-zh">袋产出量采用预拌混凝土厂家包装标注值：80 磅袋约 0.60 ft³，60 磅袋约 0.45 ft³，40 磅袋约 0.30 ft³。商品混凝土通常按整立方码或半立方码起订，低于约 1 立方码往往还要收小方量附加费；因此超过约 1 yd³（相当于 45 袋 80 磅装）时，值得先问一下送货报价。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">How many 80 lb bags of concrete are in a cubic yard?</span><span class="bi-zh">一立方码需要多少袋 80 磅混凝土？</span></summary>
+          <p><span class="bi-en">A cubic yard is 27 ft³ and an 80 lb bag yields about 0.60 ft³, so it takes 45 bags — before any waste allowance. That is roughly 3,600 lb of material, which is why most people switch to ready-mix well before this point.</span><span class="bi-zh">一立方码等于 27 ft³，一袋 80 磅装约产出 0.60 ft³，因此需要 45 袋——这还没算损耗。总重约 3600 磅，所以大多数人在到达这个量之前就会改叫商品混凝土。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">How thick should a concrete slab be?</span><span class="bi-zh">混凝土地坪应该做多厚？</span></summary>
+          <p><span class="bi-en">Four inches (100 mm) is the usual thickness for a patio, shed base or residential walkway; driveways carrying vehicles are commonly poured at five to six inches (125–150 mm). Thickness affects volume linearly, so going from 4 in to 6 in adds 50% to your material cost. Structural slabs should be specified by an engineer.</span><span class="bi-zh">露台、工具房基础和住宅步道通常做 4 英寸（100 mm）厚；需要走车的车道一般做 5～6 英寸（125～150 mm）。体积与厚度成正比，从 4 英寸加到 6 英寸材料费直接增加 50%。结构性楼板应由工程师确定。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Should I add extra for spillage?</span><span class="bi-zh">需要额外留洒漏余量吗？</span></summary>
+          <p><span class="bi-en">Yes. A 5–10% allowance covers uneven subgrade, spillage and slight over-excavation of footings. Footings dug by hand often need more, because the trench walls are rarely perfectly straight.</span><span class="bi-zh">需要。5～10% 的余量可以覆盖基底不平、洒漏以及基槽超挖。人工开挖的基槽往往要留更多，因为槽壁很难挖得笔直。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="paint-calculator.html"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></a></li>
+        <li><a href="tile-calculator.html"><span class="bi-en">Tile &amp; Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="roofing-calculator.html"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></a></li>
+        <li><a href="deck-calculator.html"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></a></li>
+        <li><a href="fence-calculator.html"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></a></li>
+        <li><a href="gravel-calculator.html"><span class="bi-en">Gravel, Sand &amp; Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></a></li>
+        <li><a href="stair-calculator.html"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></a></li>
+        <li><a href="brick-calculator.html"><span class="bi-en">Brick &amp; Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "concrete";</script>
+<script src="../app.js"></script>
+</body>
+</html>
