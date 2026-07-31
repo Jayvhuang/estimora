@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Roofing Calculator — Squares, Bundles &amp; Pitch Factor | Estimora</title>
+<meta name="description" content="Convert a roof footprint and pitch into actual roof area, roofing squares and shingle bundles, plus underlayment rolls, nails and drip edge." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/roofing-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/roofing-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/roofing-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/roofing-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Roofing Calculator — Squares, Bundles &amp; Pitch Factor" />
+<meta property="og:description" content="Convert a roof footprint and pitch into actual roof area, roofing squares and shingle bundles, plus underlayment rolls, nails and drip edge." />
+<meta property="og:url" content="https://estimora.com/tools/roofing-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Roofing Calculator",
+      "url": "https://estimora.com/tools/roofing-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Convert a roof footprint and pitch into actual roof area, roofing squares and shingle bundles, plus underlayment rolls, nails and drip edge.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Roofing Calculator",
+          "item": "https://estimora.com/tools/roofing-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a roofing square?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "100 square feet of finished roof surface — the unit roofers quote in. Shingles are packaged so that three bundles cover one square."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find my roof pitch without climbing up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From inside the attic, hold a level horizontally against a rafter, mark 12 in along the level, and measure straight up to the rafter. That vertical distance is the rise in a rise:12 pitch. A phone inclinometer app against the rafter also works."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to add for starter strip and ridge cap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and they are sold separately. Budget the eave length for starter strip and the ridge plus hip length for cap shingles; the waste allowance in this tool covers cutting, not these separate products."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">A roof is always bigger than the house it sits on. The pitch factor is the multiplier between the footprint you can measure from the ground and the sloped area you actually have to cover — a 6:12 roof is 12% larger than its footprint, and a 12:12 roof is 41% larger.</span><span class="bi-zh">屋面永远比房子的投影大。坡度系数就是「从地面量到的投影面积」与「实际要铺的斜面面积」之间的换算系数——6:12 坡度的屋面比投影大 12%，12:12 坡度则大 41%。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Pitch factor = √(rise² + 12²) ÷ 12</span></span><span class="bi-zh"><span class="formula-line">坡度系数 = √(rise² + 12²) ÷ 12</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Roof area = footprint area × pitch factor</span></span><span class="bi-zh"><span class="formula-line">屋面面积 = 投影面积 × 坡度系数</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Squares = roof area ÷ 100 ft²; bundles = squares × 3</span></span><span class="bi-zh"><span class="formula-line">Square 数 = 屋面面积 ÷ 100 ft²；瓦捆数 = Square × 3</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">One roofing square is 100 ft² (9.29 m²) and standard three-tab or architectural shingles come three bundles to the square. Add waste for hips and valleys, where every course is cut on an angle — 10% on a simple gable, 15% or more on a cut-up roof. This tool estimates material only; it does not evaluate structural capacity, and adding a second layer of shingles is restricted or prohibited in many jurisdictions.</span><span class="bi-zh">1 个 Square 等于 100 ft²（9.29 m²），常规三片式或叠合瓦通常 3 捆 = 1 Square。斜脊和天沟处每一排瓦都要斜切，需增加损耗——简单双坡屋面按 10%，造型复杂的屋面按 15% 以上。本工具只估算材料，不评估结构承载力；很多地区对「加铺第二层瓦」有限制甚至禁止。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">What is a roofing square?</span><span class="bi-zh">什么是屋面 Square？</span></summary>
+          <p><span class="bi-en">100 square feet of finished roof surface — the unit roofers quote in. Shingles are packaged so that three bundles cover one square.</span><span class="bi-zh">指 100 平方英尺的完成屋面，是屋面工程报价的计量单位。沥青瓦通常按 3 捆覆盖 1 个 Square 包装。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">How do I find my roof pitch without climbing up?</span><span class="bi-zh">不上屋顶怎么测坡度？</span></summary>
+          <p><span class="bi-en">From inside the attic, hold a level horizontally against a rafter, mark 12 in along the level, and measure straight up to the rafter. That vertical distance is the rise in a rise:12 pitch. A phone inclinometer app against the rafter also works.</span><span class="bi-zh">不用上屋顶：在阁楼里把水平尺贴着椽条水平放置，沿水平尺量出 12 英寸，再竖直量到椽条的垂直距离，这个数值就是 rise:12 中的 rise。也可以把手机倾角仪贴在椽条上读数。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Do I need to add for starter strip and ridge cap?</span><span class="bi-zh">起始条和脊瓦要另外算吗？</span></summary>
+          <p><span class="bi-en">Yes, and they are sold separately. Budget the eave length for starter strip and the ridge plus hip length for cap shingles; the waste allowance in this tool covers cutting, not these separate products.</span><span class="bi-zh">需要，而且它们是单独售卖的。起始条按檐口长度估算，脊瓦按屋脊加斜脊长度估算；本工具中的损耗率只覆盖切割，不包含这些单独的产品。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="concrete-calculator.html"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></a></li>
+        <li><a href="paint-calculator.html"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></a></li>
+        <li><a href="tile-calculator.html"><span class="bi-en">Tile &amp; Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="deck-calculator.html"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></a></li>
+        <li><a href="fence-calculator.html"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></a></li>
+        <li><a href="gravel-calculator.html"><span class="bi-en">Gravel, Sand &amp; Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></a></li>
+        <li><a href="stair-calculator.html"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></a></li>
+        <li><a href="brick-calculator.html"><span class="bi-en">Brick &amp; Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "roofing";</script>
+<script src="../app.js"></script>
+</body>
+</html>
