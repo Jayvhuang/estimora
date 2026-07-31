@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Paint Calculator — Gallons or Litres for a Room | Estimora</title>
+<meta name="description" content="How much paint a room needs: wall area minus doors and windows, multiplied by the number of coats and divided by the spread rate. Gives gallons or litres plus the number of cans to buy." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/paint-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/paint-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/paint-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/paint-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Paint Calculator — Gallons or Litres for a Room" />
+<meta property="og:description" content="How much paint a room needs: wall area minus doors and windows, multiplied by the number of coats and divided by the spread rate. Gives gallons or litres plus the number of cans to buy." />
+<meta property="og:url" content="https://estimora.com/tools/paint-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Paint Calculator",
+      "url": "https://estimora.com/tools/paint-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "How much paint a room needs: wall area minus doors and windows, multiplied by the number of coats and divided by the spread rate. Gives gallons or litres plus the number of cans to buy.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Paint Calculator",
+          "item": "https://estimora.com/tools/paint-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much paint do I need for a 12×12 room?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With 8 ft ceilings that is a 48 ft perimeter × 8 ft = 384 ft² of wall. Subtract one door (about 21 ft²) and one window (about 15 ft²) and you have around 348 ft². Two coats at 350 ft²/gal is about 2.0 gallons, so you buy two gallons — and a third if the colour change is dramatic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to subtract doors and windows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For one or two average openings the difference is small, but a room with sliding doors or a wall of glass can lose 15–25% of its paintable area. The calculator subtracts them so you are not buying paint for the glazing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the ceiling count?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — this tool estimates walls only, because ceilings usually take a different product and often only one coat. Estimate a ceiling by running the tile or gravel-style area maths on the floor footprint and dividing by the spread rate."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">Most paint over-buying comes from ignoring two things: the openings you are not painting, and the fact that paint is sold in fixed can sizes. This calculator subtracts doors and windows, multiplies by your coat count, then rounds up to whole cans.</span><span class="bi-zh">买多油漆通常源于两点疏忽：忘了扣除不需要刷的门窗，以及忘了油漆是按固定桶装规格出售的。这个计算器会扣除门窗、乘以涂刷遍数，再按整桶向上取整。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Wall area = perimeter × ceiling height</span></span><span class="bi-zh"><span class="formula-line">墙面面积 = 周长 × 层高</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Paintable area = wall area − door area − window area</span></span><span class="bi-zh"><span class="formula-line">可涂面积 = 墙面面积 − 门面积 − 窗面积</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Volume = paintable area × coats ÷ spread rate</span></span><span class="bi-zh"><span class="formula-line">涂料体积 = 可涂面积 × 遍数 ÷ 涂布率</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">A spread rate of 350 ft² per US gallon (about 8.6 m² per litre) is a common figure printed on interior latex paint, but it assumes a smooth, previously painted, non-porous surface. New drywall, bare plaster, heavy texture and deep colour changes all reduce coverage — sometimes by a third. Primer is a separate calculation: run the tool again with one coat and the primer's own spread rate.</span><span class="bi-zh">内墙乳胶漆标注的涂布率常见为 350 ft²/加仑（约 8.6 m²/升），但这是在光滑、已涂刷过、不吸水的基面上测得的。新石膏板、素水泥面、拉毛质感墙面以及深浅色大幅变化都会降低涂布率，有时可低三分之一。底漆需要单独计算：把遍数设为 1，并填入底漆自己的涂布率再算一次。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">How much paint do I need for a 12×12 room?</span><span class="bi-zh">12×12 的房间需要多少油漆？</span></summary>
+          <p><span class="bi-en">With 8 ft ceilings that is a 48 ft perimeter × 8 ft = 384 ft² of wall. Subtract one door (about 21 ft²) and one window (about 15 ft²) and you have around 348 ft². Two coats at 350 ft²/gal is about 2.0 gallons, so you buy two gallons — and a third if the colour change is dramatic.</span><span class="bi-zh">层高 8 英尺时，周长 48 英尺 × 8 英尺 = 384 ft² 墙面。扣掉一扇门（约 21 ft²）和一扇窗（约 15 ft²）后约 348 ft²。按 350 ft²/加仑刷两遍约需 2.0 加仑，因此买 2 加仑即可；若颜色反差很大，再加一加仑。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Do I need to subtract doors and windows?</span><span class="bi-zh">一定要扣除门窗吗？</span></summary>
+          <p><span class="bi-en">For one or two average openings the difference is small, but a room with sliding doors or a wall of glass can lose 15–25% of its paintable area. The calculator subtracts them so you are not buying paint for the glazing.</span><span class="bi-zh">只有一两个普通洞口时影响不大；但带推拉门或整面玻璃的房间，可涂面积可能减少 15～25%。计算器会自动扣除，避免你为玻璃买漆。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Does the ceiling count?</span><span class="bi-zh">顶棚算在里面吗？</span></summary>
+          <p><span class="bi-en">No — this tool estimates walls only, because ceilings usually take a different product and often only one coat. Estimate a ceiling by running the tile or gravel-style area maths on the floor footprint and dividing by the spread rate.</span><span class="bi-zh">不计。本工具只估算墙面，因为顶棚通常用不同产品，而且经常只刷一遍。若要估算顶棚，可按地面投影面积除以涂布率单独计算。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="concrete-calculator.html"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></a></li>
+        <li><a href="tile-calculator.html"><span class="bi-en">Tile &amp; Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="roofing-calculator.html"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></a></li>
+        <li><a href="deck-calculator.html"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></a></li>
+        <li><a href="fence-calculator.html"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></a></li>
+        <li><a href="gravel-calculator.html"><span class="bi-en">Gravel, Sand &amp; Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></a></li>
+        <li><a href="stair-calculator.html"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></a></li>
+        <li><a href="brick-calculator.html"><span class="bi-en">Brick &amp; Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "paint";</script>
+<script src="../app.js"></script>
+</body>
+</html>
