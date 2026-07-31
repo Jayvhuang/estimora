@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tile Calculator — Tiles, Boxes &amp; Grout Joints | Estimora</title>
+<meta name="description" content="Count the tiles, planks and boxes needed for a floor or wall, with the grout joint included in the effective tile size and a waste factor you control." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/tile-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/tile-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/tile-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/tile-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Tile Calculator — Tiles, Boxes &amp; Grout Joints" />
+<meta property="og:description" content="Count the tiles, planks and boxes needed for a floor or wall, with the grout joint included in the effective tile size and a waste factor you control." />
+<meta property="og:url" content="https://estimora.com/tools/tile-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Tile & Flooring Calculator",
+      "url": "https://estimora.com/tools/tile-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Count the tiles, planks and boxes needed for a floor or wall, with the grout joint included in the effective tile size and a waste factor you control.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tile & Flooring Calculator",
+          "item": "https://estimora.com/tools/tile-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does the grout line really change the tile count?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On a 200 ft² floor with 12 in tiles and a 1/8 in joint, the joint alone removes roughly four tiles' worth of coverage. It is not huge, but it is exactly the margin that sends people back to the store."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much extra tile should I keep?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep at least one full box after the job. Tiles get cracked by dropped tools years later, and matching a discontinued line is usually impossible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this for vinyl planks and laminate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Enter the plank length and width and set the joint to zero, since click-lock flooring has no grout line. Planks are sold by the box in square feet or square metres, so enter the coverage per box as the tiles-per-box figure if that is how your product is labelled."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Tile & Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">The trap in tile maths is the grout joint. A 12×12 in tile with a 1/8 in joint actually occupies 12.125 × 12.125 in, and over a large floor that difference is worth several tiles. This calculator uses the effective size including the joint, then rounds up to whole boxes.</span><span class="bi-zh">瓷砖计算最容易忽略的是砖缝。12×12 英寸的砖配 1/8 英寸缝，实际占位是 12.125 × 12.125 英寸；面积一大，这个差值就是好几块砖。本计算器按含缝的有效尺寸计算，再按整箱向上取整。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Effective tile size = tile dimension + grout joint</span></span><span class="bi-zh"><span class="formula-line">有效砖尺寸 = 砖尺寸 + 缝宽</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Tiles = area × (1 + waste) ÷ effective tile area, rounded up</span></span><span class="bi-zh"><span class="formula-line">块数 = 面积 × (1 + 损耗) ÷ 有效单块面积，向上取整</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Boxes = tiles ÷ tiles per box, rounded up</span></span><span class="bi-zh"><span class="formula-line">箱数 = 块数 ÷ 每箱块数，向上取整</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">Use 10% waste for a straight layout in a simple rectangular room, 15% where the room has alcoves or many cuts, and 20% or more for a diagonal or herringbone pattern, where almost every perimeter tile is cut twice. Buy the whole job from one production lot: shade varies between lots and a single replacement box bought later is often visibly different.</span><span class="bi-zh">简单矩形房间直铺按 10% 损耗；有壁龛、切割较多时按 15%；斜铺或人字铺按 20% 以上，因为周边几乎每块砖都要切两刀。整个工程尽量一次买齐同一批号：不同批次存在色差，事后单独补一箱往往肉眼可见。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">Does the grout line really change the tile count?</span><span class="bi-zh">砖缝真的会影响用砖量吗？</span></summary>
+          <p><span class="bi-en">On a 200 ft² floor with 12 in tiles and a 1/8 in joint, the joint alone removes roughly four tiles&#x27; worth of coverage. It is not huge, but it is exactly the margin that sends people back to the store.</span><span class="bi-zh">以 200 ft² 地面、12 英寸砖、1/8 英寸缝为例，仅砖缝就相当于少铺约 4 块砖的面积。数量不大，但恰恰就是让人不得不再跑一趟建材店的那点差额。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">How much extra tile should I keep?</span><span class="bi-zh">应该多留多少备用瓷砖？</span></summary>
+          <p><span class="bi-en">Keep at least one full box after the job. Tiles get cracked by dropped tools years later, and matching a discontinued line is usually impossible.</span><span class="bi-zh">施工完成后至少留一整箱。日后掉落工具砸裂瓷砖是常事，而停产型号基本无法配到同款。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Can I use this for vinyl planks and laminate?</span><span class="bi-zh">这个工具能算 PVC 地板和强化地板吗？</span></summary>
+          <p><span class="bi-en">Yes. Enter the plank length and width and set the joint to zero, since click-lock flooring has no grout line. Planks are sold by the box in square feet or square metres, so enter the coverage per box as the tiles-per-box figure if that is how your product is labelled.</span><span class="bi-zh">可以。填入地板的长和宽，并把缝宽设为 0，因为锁扣地板没有灰缝。地板通常按每箱平方英尺／平方米销售，如果产品是这样标注的，可把每箱覆盖面积换算成每箱块数填入。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="concrete-calculator.html"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></a></li>
+        <li><a href="paint-calculator.html"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="roofing-calculator.html"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></a></li>
+        <li><a href="deck-calculator.html"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></a></li>
+        <li><a href="fence-calculator.html"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></a></li>
+        <li><a href="gravel-calculator.html"><span class="bi-en">Gravel, Sand &amp; Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></a></li>
+        <li><a href="stair-calculator.html"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></a></li>
+        <li><a href="brick-calculator.html"><span class="bi-en">Brick &amp; Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "tile";</script>
+<script src="../app.js"></script>
+</body>
+</html>
