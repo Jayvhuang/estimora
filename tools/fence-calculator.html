@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fence Calculator — Posts, Rails, Pickets &amp; Concrete | Estimora</title>
+<meta name="description" content="Posts, rails and pickets for a run of fence at your chosen post spacing, plus the concrete needed to set every post hole." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/fence-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/fence-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/fence-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/fence-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Fence Calculator — Posts, Rails, Pickets &amp; Concrete" />
+<meta property="og:description" content="Posts, rails and pickets for a run of fence at your chosen post spacing, plus the concrete needed to set every post hole." />
+<meta property="og:url" content="https://estimora.com/tools/fence-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Fence Calculator",
+      "url": "https://estimora.com/tools/fence-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Posts, rails and pickets for a run of fence at your chosen post spacing, plus the concrete needed to set every post hole.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fence Calculator",
+          "item": "https://estimora.com/tools/fence-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How deep should fence posts go?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One third of the above-ground height is the common rule of thumb, so a 6 ft fence uses posts buried about 2 ft, meaning 8 ft posts. In frost-prone regions the hole must reach below the frost line regardless of that ratio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many bags of concrete per fence post?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 10 in diameter hole 24 in deep holds about 1.1 ft³, and a 4×4 post occupies about 0.15 ft³ of that, so roughly 1 ft³ of concrete — around two 80 lb bags per hole."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do gates change the count?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A gate opening needs its own pair of posts, and the hinge post should be heavier and set deeper than a line post because it carries the gate's weight in cantilever."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">A fence is a repeating pattern, which makes it easy to estimate and easy to get wrong by exactly one post. The rule is that a run of fence always has one more post than it has sections — and every one of those posts needs a hole full of concrete.</span><span class="bi-zh">围栏是重复结构，所以既容易估算，也容易正好算少一根柱子。规律是：一段围栏的立柱数永远比分段数多一根——而每一根柱子都需要一个灌满混凝土的柱坑。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Sections = fence length ÷ post spacing, rounded up</span></span><span class="bi-zh"><span class="formula-line">分段数 = 围栏长度 ÷ 立柱间距，向上取整</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Posts = sections + 1</span></span><span class="bi-zh"><span class="formula-line">立柱数 = 分段数 + 1</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Concrete per hole = π × (hole radius)² × depth − post volume</span></span><span class="bi-zh"><span class="formula-line">每坑混凝土 = π × 坑半径² × 埋深 − 立柱占位体积</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">Post spacing of 6 to 8 ft is standard for timber fencing; wider spacing sags the rails. Bury roughly one third of the post length, or at least below the local frost line — in cold climates a shallow post will be lifted out of the ground over a few winters. The concrete figure subtracts the volume the post itself occupies in the hole, which is why it is lower than a plain cylinder calculation.</span><span class="bi-zh">木围栏的立柱间距常用 6～8 英尺，间距过大横档会下垂。埋深取柱长的约三分之一，并且至少要深于当地冻土线——寒冷地区埋得太浅的柱子几个冬天就会被冻胀顶出地面。混凝土用量已扣除立柱本身在坑内占据的体积，所以比按整个圆柱体计算的结果要小。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">How deep should fence posts go?</span><span class="bi-zh">围栏立柱应该埋多深？</span></summary>
+          <p><span class="bi-en">One third of the above-ground height is the common rule of thumb, so a 6 ft fence uses posts buried about 2 ft, meaning 8 ft posts. In frost-prone regions the hole must reach below the frost line regardless of that ratio.</span><span class="bi-zh">常用经验是埋深取地上高度的三分之一，因此 6 英尺高的围栏埋深约 2 英尺，需要 8 英尺长的立柱。在有冻胀的地区，无论比例如何，坑深都必须超过当地冻土线。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">How many bags of concrete per fence post?</span><span class="bi-zh">每根立柱要用多少袋混凝土？</span></summary>
+          <p><span class="bi-en">A 10 in diameter hole 24 in deep holds about 1.1 ft³, and a 4×4 post occupies about 0.15 ft³ of that, so roughly 1 ft³ of concrete — around two 80 lb bags per hole.</span><span class="bi-zh">直径 10 英寸、深 24 英寸的柱坑容积约 1.1 ft³，4×4 立柱本身约占 0.15 ft³，因此实际约需 1 ft³ 混凝土——大约每坑两袋 80 磅装。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Do gates change the count?</span><span class="bi-zh">有门洞会影响数量吗？</span></summary>
+          <p><span class="bi-en">Yes. A gate opening needs its own pair of posts, and the hinge post should be heavier and set deeper than a line post because it carries the gate&#x27;s weight in cantilever.</span><span class="bi-zh">会。门洞需要单独一对立柱，其中合页侧的立柱应比普通立柱更粗、埋得更深，因为它要以悬臂方式承受门扇的重量。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="concrete-calculator.html"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></a></li>
+        <li><a href="paint-calculator.html"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></a></li>
+        <li><a href="tile-calculator.html"><span class="bi-en">Tile &amp; Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="roofing-calculator.html"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></a></li>
+        <li><a href="deck-calculator.html"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></a></li>
+        <li><a href="gravel-calculator.html"><span class="bi-en">Gravel, Sand &amp; Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></a></li>
+        <li><a href="stair-calculator.html"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></a></li>
+        <li><a href="brick-calculator.html"><span class="bi-en">Brick &amp; Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "fence";</script>
+<script src="../app.js"></script>
+</body>
+</html>
