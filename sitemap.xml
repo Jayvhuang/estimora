@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://estimora.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/privacy.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/privacy.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/concrete-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/concrete-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/concrete-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/concrete-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/paint-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/paint-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/paint-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/paint-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/tile-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/tile-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/tile-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/tile-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/drywall-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/drywall-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/drywall-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/drywall-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/roofing-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/roofing-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/roofing-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/roofing-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/deck-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/deck-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/deck-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/deck-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/fence-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/fence-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/fence-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/fence-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/gravel-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/gravel-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/gravel-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/gravel-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/stair-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/stair-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/stair-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/stair-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://estimora.com/tools/brick-calculator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estimora.com/tools/brick-calculator.html" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/brick-calculator.html?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/brick-calculator.html" />
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
