@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stair Calculator — Risers, Treads, Run &amp; Stringer | Estimora</title>
+<meta name="description" content="Divide a total rise into equal risers, get the tread depth, total run and stringer length, and see the result checked against common residential code limits." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/stair-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/stair-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/stair-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/stair-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Stair Calculator — Risers, Treads, Run &amp; Stringer" />
+<meta property="og:description" content="Divide a total rise into equal risers, get the tread depth, total run and stringer length, and see the result checked against common residential code limits." />
+<meta property="og:url" content="https://estimora.com/tools/stair-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Stair Calculator",
+      "url": "https://estimora.com/tools/stair-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Divide a total rise into equal risers, get the tread depth, total run and stringer length, and see the result checked against common residential code limits.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Stair Calculator",
+          "item": "https://estimora.com/tools/stair-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why must all risers be the same height?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because people climb by rhythm. A single riser that differs by more than about 3/8 in is a recognised trip hazard, and it is the most common stair defect flagged at inspection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the last step 'missing'?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is always one fewer tread than risers, because the upper floor itself acts as the final tread. It looks like an error in the count until you draw it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Blondel rule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A comfort relation from 18th-century French stair design: two risers plus one tread should total about 24 to 25 inches (630 mm). Stairs that satisfy the code but fall far outside this range tend to feel wrong underfoot."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">Stairs are the one calculation in this set where being slightly wrong is a safety problem rather than a shopping problem. Risers must be equal — the code tolerance is 3/8 in across the whole flight — because people climb stairs by muscle memory, not by looking.</span><span class="bi-zh">这是本站里唯一一个「算错不是多跑一趟建材店，而是安全隐患」的计算。踢面必须等高——规范允许的整跑最大偏差是 3/8 英寸——因为人上下楼靠的是肌肉记忆，不是看着走。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Risers = round(total rise ÷ target riser)</span></span><span class="bi-zh"><span class="formula-line">踢面数 = round(总高 ÷ 目标踢面高)</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Actual riser = total rise ÷ risers; treads = risers − 1</span></span><span class="bi-zh"><span class="formula-line">实际踢面 = 总高 ÷ 踢面数；踏面数 = 踢面数 − 1</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Stringer length = √(total rise² + total run²)</span></span><span class="bi-zh"><span class="formula-line">斜梁长度 = √(总高² + 总投影²)</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">The tool checks your result against limits widely used in residential construction — a maximum riser of 7 3/4 in and a minimum tread of 10 in, as set out in IRC 2021 §R311.7 — and also reports the Blondel comfort relation (2 × riser + tread, comfortable at about 24–25 in). These are planning aids. Codes differ by state, province and edition, and the authority having jurisdiction is the only one whose numbers count. Confirm before you cut a stringer.</span><span class="bi-zh">工具会按住宅建筑中广泛采用的限值检查结果——最大踢面 7 3/4 英寸、最小踏面 10 英寸（见 IRC 2021 §R311.7），同时给出 Blondel 舒适度关系式（2 × 踢面 + 踏面，约 24～25 英寸为舒适）。这些只是规划参考。各州／省及不同版本规范存在差异，最终以当地主管部门执行的规范为准。开料切斜梁前务必核实。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">Why must all risers be the same height?</span><span class="bi-zh">为什么每级踢面必须等高？</span></summary>
+          <p><span class="bi-en">Because people climb by rhythm. A single riser that differs by more than about 3/8 in is a recognised trip hazard, and it is the most common stair defect flagged at inspection.</span><span class="bi-zh">因为人上下楼是按节奏走的。只要有一级踢面高度相差超过约 3/8 英寸，就构成公认的绊倒风险，这也是验收时最常见的楼梯缺陷。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Why is the last step &#x27;missing&#x27;?</span><span class="bi-zh">为什么好像少了一级踏步？</span></summary>
+          <p><span class="bi-en">There is always one fewer tread than risers, because the upper floor itself acts as the final tread. It looks like an error in the count until you draw it.</span><span class="bi-zh">踏面数永远比踢面数少一级，因为上层楼板本身就充当了最后一级踏面。不画图的时候看起来像算错了。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">What is the Blondel rule?</span><span class="bi-zh">什么是 Blondel 公式？</span></summary>
+          <p><span class="bi-en">A comfort relation from 18th-century French stair design: two risers plus one tread should total about 24 to 25 inches (630 mm). Stairs that satisfy the code but fall far outside this range tend to feel wrong underfoot.</span><span class="bi-zh">源自 18 世纪法国楼梯设计的舒适度经验公式：2 个踢面高加 1 个踏面宽应约等于 24～25 英寸（630 mm）。有些楼梯虽然符合规范，但偏离这个范围太远，走起来就是别扭。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="concrete-calculator.html"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></a></li>
+        <li><a href="paint-calculator.html"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></a></li>
+        <li><a href="tile-calculator.html"><span class="bi-en">Tile &amp; Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="roofing-calculator.html"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></a></li>
+        <li><a href="deck-calculator.html"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></a></li>
+        <li><a href="fence-calculator.html"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></a></li>
+        <li><a href="gravel-calculator.html"><span class="bi-en">Gravel, Sand &amp; Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></a></li>
+        <li><a href="brick-calculator.html"><span class="bi-en">Brick &amp; Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "stairs";</script>
+<script src="../app.js"></script>
+</body>
+</html>
