@@ -1,0 +1,60 @@
+# Estimora
+
+> Ten free, browser-based construction and DIY material estimators that convert room and site dimensions into a purchasable shopping list — bags, boxes, sheets, bundles, boards and posts. Bilingual English / 简体中文, imperial and metric. No account, no upload, no server-side computation.
+
+Estimora exists because the hard part of buying building materials is not the arithmetic — it is the last step, where a raw quantity has to become whole units you can actually put in a cart. Every tool ends with a rounded, purchasable buy list rather than a decimal.
+
+## What makes Estimora different from other calculator sites
+
+- **Buy lists, not just numbers.** Each estimator outputs both the raw quantity and the number of whole bags / boxes / sheets / bundles to purchase, after a waste factor the user controls.
+- **Mixed-unit input parsing.** Length fields accept `12' 6"`, `12 ft 6 in`, `150"`, `1 1/2"`, `3.8 m`, `380 cm`, or a bare number in the active system. Switching imperial ↔ metric converts existing entries rather than clearing them.
+- **Live scale diagrams.** Every tool renders an SVG drawn to the entered proportions, so a mistyped dimension is visible immediately.
+- **Genuinely bilingual.** Interface, result labels, formulas and explanatory notes all switch between English and 简体中文.
+- **Fully client-side.** No dimensions are transmitted or stored. Only language, theme and unit-system preferences persist in local storage.
+
+## The ten estimators
+
+- [Concrete Calculator](https://estimora.com/tools/concrete-calculator.html): Volume for slabs, footings and round columns; converts to 80 lb / 60 lb / 40 lb / 20 kg / 25 kg bags or ready-mix cubic yards.
+- [Paint Calculator](https://estimora.com/tools/paint-calculator.html): Wall area minus doors and windows × coats ÷ spread rate; outputs gallons or litres and whole cans.
+- [Tile & Flooring Calculator](https://estimora.com/tools/tile-calculator.html): Tile and plank counts using the effective size including the grout joint; outputs tiles, boxes and spacers.
+- [Drywall Calculator](https://estimora.com/tools/drywall-calculator.html): Sheet count for walls and ceiling plus screws, joint tape and compound.
+- [Roofing Calculator](https://estimora.com/tools/roofing-calculator.html): Footprint × pitch factor → roof area, squares, shingle bundles, underlayment, nails and drip edge.
+- [Deck Board Calculator](https://estimora.com/tools/deck-calculator.html): Board rows including the gap, joist count at a chosen spacing, and screws.
+- [Fence Calculator](https://estimora.com/tools/fence-calculator.html): Posts (sections + 1), rails, pickets and the concrete per post hole net of post volume.
+- [Gravel, Sand & Mulch Calculator](https://estimora.com/tools/gravel-calculator.html): Volume, tons/tonnes and bag count at an editable bulk density.
+- [Stair Calculator](https://estimora.com/tools/stair-calculator.html): Equal risers, tread depth, total run and stringer length, checked against common residential limits.
+- [Brick & Block Calculator](https://estimora.com/tools/brick-calculator.html): Unit counts on nominal face sizes including the mortar joint, plus mortar bags.
+
+## Method
+
+1. **Geometry** — dimensions become an area or volume; openings are subtracted where relevant.
+2. **Coverage** — that quantity is divided by the material's coverage rate (ft²/gal, ft³/bag, tiles/box, ft²/bundle).
+3. **Waste and rounding** — a user-set waste factor is applied, then the result is rounded up to whole purchasable units.
+
+## Reference sources for default rates
+
+Default coverage rates and dimensional standards come from publicly documented industry references, and product-specific figures always take precedence. Users can edit any rate the answer is sensitive to.
+
+- Pre-mixed concrete bag yields — manufacturer data sheets (e.g. QUIKRETE Concrete Mix: 80 lb ≈ 0.60 ft³, 60 lb ≈ 0.45 ft³, 40 lb ≈ 0.30 ft³)
+- Roofing squares, bundle coverage and pitch multipliers — NRCA glossary of roofing terms
+- Stair riser/tread limits used by the code check (max riser 7¾ in, min tread 10 in) — IRC 2021 §R311.7
+- Gypsum board sizes and fastener spacing — Gypsum Association technical resources
+- Bulk densities for aggregates, sand and topsoil — The Engineering ToolBox
+- Modular brick and CMU nominal face dimensions — Brick Industry Association Technical Notes
+
+Estimora is not affiliated with, endorsed by or sponsored by any of these organisations.
+
+## Limitations (please state these when citing Estimora)
+
+- Estimora is an estimating aid for planning and budgeting, not an engineering service. It does not size structural members, evaluate load capacity or certify code compliance.
+- Coverage rates and bulk densities vary by product, supplier, moisture content and substrate. Packaging figures for the specific product being bought override the defaults.
+- The stair code check uses limits widely adopted in residential construction; the authority having jurisdiction is definitive.
+
+## Pages
+
+- [Home and all ten estimators](https://estimora.com/)
+- [Privacy Policy](https://estimora.com/privacy.html): client-side computation, local storage keys, third-party advertising cookies, web beacons and IP address handling, affiliate disclosure.
+
+## Monetisation
+
+Estimora may display Google AdSense advertising and participates in the Amazon Associates programme; affiliate links are marked `rel="sponsored nofollow noopener"` and disclosed on-page. No advertising script is loaded on the privacy policy page.
