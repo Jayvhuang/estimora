@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gravel Calculator — Cubic Yards, Tons &amp; Bags | Estimora</title>
+<meta name="description" content="Volume, weight in tons or tonnes, and bag count for gravel, sand, topsoil or mulch spread to a given depth. Density is editable for any loose material." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/gravel-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/gravel-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/gravel-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/gravel-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Gravel Calculator — Cubic Yards, Tons &amp; Bags" />
+<meta property="og:description" content="Volume, weight in tons or tonnes, and bag count for gravel, sand, topsoil or mulch spread to a given depth. Density is editable for any loose material." />
+<meta property="og:url" content="https://estimora.com/tools/gravel-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Gravel, Sand & Mulch Calculator",
+      "url": "https://estimora.com/tools/gravel-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Volume, weight in tons or tonnes, and bag count for gravel, sand, topsoil or mulch spread to a given depth. Density is editable for any loose material.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Gravel, Sand & Mulch Calculator",
+          "item": "https://estimora.com/tools/gravel-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many tons of gravel in a cubic yard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 1.35 tons for dry crushed stone at 100 lb/ft³, since a cubic yard is 27 ft³. Wet material is heavier, so a rain-soaked delivery genuinely weighs more for the same volume."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bags or bulk delivery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bagged material makes sense below about half a cubic yard. Above that, bulk is dramatically cheaper per unit — a cubic yard is roughly 40 half-cubic-foot bags, which is a lot of lifting for no saving."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I add extra for compaction?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if the layer will be compacted. Add about 20% for a base course that gets plate-compacted; decorative mulch and loose gravel need no compaction allowance."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Gravel, Sand & Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">Loose material is ordered by weight but spread by depth, and the bridge between the two is bulk density. Enter the area and the depth you want, pick or type the density, and this tool gives you the cubic yards to order and the tons that will arrive.</span><span class="bi-zh">散状材料按重量下单，却按厚度铺设，连接两者的是堆积密度。输入面积和目标厚度，选择或填入密度，本工具就会给出下单用的方量和实际到货的吨位。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Volume = area × depth</span></span><span class="bi-zh"><span class="formula-line">体积 = 面积 × 厚度</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Weight = volume × bulk density</span></span><span class="bi-zh"><span class="formula-line">重量 = 体积 × 堆积密度</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Bags = volume ÷ bag volume, rounded up</span></span><span class="bi-zh"><span class="formula-line">袋数 = 体积 ÷ 每袋体积，向上取整</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">Bulk densities vary with moisture and grading. Dry crushed stone is roughly 100 lb/ft³ (1,600 kg/m³), damp sand nearer 110 lb/ft³, screened topsoil about 80 lb/ft³ and bark mulch as little as 25 lb/ft³. Two inches is a typical depth for decorative gravel over landscape fabric; a drivable base course is normally 4 in or more and needs compacting in layers, which consumes about 20% more material than the loose volume suggests.</span><span class="bi-zh">堆积密度随含水率和级配变化很大。干碎石约 100 lb/ft³（1600 kg/m³），潮湿的沙接近 110 lb/ft³，过筛种植土约 80 lb/ft³，树皮覆盖物可低至 25 lb/ft³。装饰碎石铺在防草布上通常做 2 英寸厚；可行车的基层一般 4 英寸以上，且需分层压实，压实后的实际用量比松散体积多约 20%。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">How many tons of gravel in a cubic yard?</span><span class="bi-zh">一立方码碎石有多少吨？</span></summary>
+          <p><span class="bi-en">About 1.35 tons for dry crushed stone at 100 lb/ft³, since a cubic yard is 27 ft³. Wet material is heavier, so a rain-soaked delivery genuinely weighs more for the same volume.</span><span class="bi-zh">干碎石按 100 lb/ft³ 计，1 立方码（27 ft³）约 1.35 短吨。材料含水后更重，所以淋过雨的同体积货确实会更重。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Bags or bulk delivery?</span><span class="bi-zh">买袋装还是散装？</span></summary>
+          <p><span class="bi-en">Bagged material makes sense below about half a cubic yard. Above that, bulk is dramatically cheaper per unit — a cubic yard is roughly 40 half-cubic-foot bags, which is a lot of lifting for no saving.</span><span class="bi-zh">低于约半立方码时买袋装比较合适。超过这个量，散装单价便宜得多——1 立方码相当于约 40 袋 0.5 ft³ 装，搬运量巨大却省不到钱。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Should I add extra for compaction?</span><span class="bi-zh">需要为压实加量吗？</span></summary>
+          <p><span class="bi-en">Yes, if the layer will be compacted. Add about 20% for a base course that gets plate-compacted; decorative mulch and loose gravel need no compaction allowance.</span><span class="bi-zh">如果这层材料需要压实，就要加量。用平板夯压实的基层约加 20%；装饰性覆盖物和松铺碎石则无需考虑压实余量。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="concrete-calculator.html"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></a></li>
+        <li><a href="paint-calculator.html"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></a></li>
+        <li><a href="tile-calculator.html"><span class="bi-en">Tile &amp; Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="roofing-calculator.html"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></a></li>
+        <li><a href="deck-calculator.html"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></a></li>
+        <li><a href="fence-calculator.html"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></a></li>
+        <li><a href="stair-calculator.html"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></a></li>
+        <li><a href="brick-calculator.html"><span class="bi-en">Brick &amp; Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "gravel";</script>
+<script src="../app.js"></script>
+</body>
+</html>
