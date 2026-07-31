@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brick Calculator — Bricks, Blocks &amp; Mortar | Estimora</title>
+<meta name="description" content="Count modular bricks or concrete blocks for a wall using nominal face sizes that include the mortar joint, and estimate the mortar bags needed to lay them." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://estimora.com/tools/brick-calculator.html" />
+<link rel="alternate" hreflang="en" href="https://estimora.com/tools/brick-calculator.html" />
+<link rel="alternate" hreflang="zh-CN" href="https://estimora.com/tools/brick-calculator.html?lang=zh" />
+<link rel="alternate" hreflang="x-default" href="https://estimora.com/tools/brick-calculator.html" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Estimora" />
+<meta property="og:title" content="Brick Calculator — Bricks, Blocks &amp; Mortar" />
+<meta property="og:description" content="Count modular bricks or concrete blocks for a wall using nominal face sizes that include the mortar joint, and estimate the mortar bags needed to lay them." />
+<meta property="og:url" content="https://estimora.com/tools/brick-calculator.html" />
+<meta property="og:image" content="https://estimora.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="../styles.css" />
+
+<!-- Google AdSense (Auto ads) — placeholder, inactive until a real publisher ID is connected -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Brick & Block Calculator",
+      "url": "https://estimora.com/tools/brick-calculator.html",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "description": "Count modular bricks or concrete blocks for a wall using nominal face sizes that include the mortar joint, and estimate the mortar bags needed to lay them.",
+      "inLanguage": [
+        "en",
+        "zh-CN"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://estimora.com/#website"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Estimora",
+          "item": "https://estimora.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Brick & Block Calculator",
+          "item": "https://estimora.com/tools/brick-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many bricks per square foot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "About 6.75 modular bricks per square foot of wall face in a single wythe with 3/8 in joints. Most people round to seven and add waste on top."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many blocks in a 8×16 ft wall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That is 128 ft², and a standard 8×8×16 in block covers about 0.89 ft² of face, so roughly 144 blocks before waste."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this include the footing or reinforcement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Footings, rebar, grout-filled cores and lintels depend on the structural design and local code. This tool estimates the units and the bedding mortar only."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../">Estimora</a>
+    <nav class="nav-links">
+      <a href="../#tools" data-i18n="nav_tools">Estimators</a>
+      <a href="../#how" data-i18n="nav_how">How it works</a>
+      <a href="../#faq" data-i18n="nav_faq">FAQ</a>
+      <a href="../privacy.html" data-i18n="nav_privacy">Privacy</a>
+    </nav>
+    <div class="toggles">
+      <button id="lang-toggle" type="button" aria-label="Switch language">中文</button>
+      <button id="theme-toggle" type="button" aria-label="Switch theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="tools" style="padding-top:26px">
+    <div class="container">
+      <a class="landing-back" href="../" data-i18n="back_all">← All estimators</a>
+      <h1 style="font-size:clamp(1.6rem,3.4vw,2.3rem);margin:0 0 8px"><span class="bi-en">Brick & Block Calculator</span><span class="bi-zh">砖与砌块用量计算器</span></h1>
+      <p class="section-sub" style="max-width:760px"><span class="bi-en">Masonry counting works on nominal sizes, not actual ones. A modular brick is made at 7 5/8 × 2 1/4 in but is laid on a 3/8 in joint, so it occupies exactly 8 × 2 2/3 in in the wall — which is why the nominal figure is the one that divides cleanly into wall dimensions.</span><span class="bi-zh">砌体计算用的是名义尺寸，不是实际尺寸。模数砖出厂尺寸是 7 5/8 × 2 1/4 英寸，配 3/8 英寸灰缝砌筑后，在墙上正好占 8 × 2 2/3 英寸——这就是为什么名义尺寸能被墙体尺寸整除。</span></p>
+      <div id="landing-tool"></div>
+      <noscript><p><strong>This calculator needs JavaScript.</strong> 本计算器需要启用 JavaScript。</p></noscript>
+    </div>
+  </section>
+
+  <section class="landing-section about">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">The maths behind it</span><span class="bi-zh">背后的计算方法</span></h2>
+            <p><span class="bi-en"><span class="formula-line">Nominal unit size = actual size + mortar joint</span></span><span class="bi-zh"><span class="formula-line">名义尺寸 = 实际尺寸 + 灰缝</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Units = wall area ÷ nominal face area × (1 + waste)</span></span><span class="bi-zh"><span class="formula-line">块数 = 墙面面积 ÷ 名义面面积 × (1 + 损耗)</span></span></p>
+      <p><span class="bi-en"><span class="formula-line">Mortar ≈ 1 bag per 30 standard bricks (3/8 in joint)</span></span><span class="bi-zh"><span class="formula-line">砂浆 ≈ 每 30 块标准砖约 1 袋（3/8 英寸灰缝）</span></span></p>
+      <p style="margin-top:14px"><span class="bi-en">Roughly seven modular bricks cover one square foot of wall face in running bond, and a standard 8×8×16 in CMU covers about 0.89 ft². Allow 5% waste for a plain wall and more where there are openings, returns or a decorative bond pattern. Mortar consumption rises quickly with joint thickness — a 1/2 in joint uses noticeably more than a 3/8 in one, and hollow block laid with face-shell bedding uses far less than solid brick.</span><span class="bi-zh">错缝砌筑时每平方英尺墙面约需 7 块模数砖，标准 8×8×16 英寸混凝土砌块每块约占 0.89 ft²。平直墙面按 5% 损耗，有洞口、转角或装饰砌法时应增加。砂浆用量随灰缝厚度上升很快——1/2 英寸灰缝明显多于 3/8 英寸；空心砌块采用面壳铺浆时，用量远低于实心砖。</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Questions about this calculator</span><span class="bi-zh">关于这个计算器的常见问题</span></h2>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="bi-en">How many bricks per square foot?</span><span class="bi-zh">每平方英尺墙面要多少块砖？</span></summary>
+          <p><span class="bi-en">About 6.75 modular bricks per square foot of wall face in a single wythe with 3/8 in joints. Most people round to seven and add waste on top.</span><span class="bi-zh">单层墙、3/8 英寸灰缝时，每平方英尺墙面约 6.75 块模数砖。实际估算一般按 7 块计，再另加损耗。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">How many blocks in a 8×16 ft wall?</span><span class="bi-zh">8×16 英尺的墙需要多少块砌块？</span></summary>
+          <p><span class="bi-en">That is 128 ft², and a standard 8×8×16 in block covers about 0.89 ft² of face, so roughly 144 blocks before waste.</span><span class="bi-zh">墙面面积 128 ft²，标准 8×8×16 英寸砌块每块面积约 0.89 ft²，不含损耗约需 144 块。</span></p>
+        </details>
+        <details>
+          <summary><span class="bi-en">Does this include the footing or reinforcement?</span><span class="bi-zh">包含基础和配筋吗？</span></summary>
+          <p><span class="bi-en">No. Footings, rebar, grout-filled cores and lintels depend on the structural design and local code. This tool estimates the units and the bedding mortar only.</span><span class="bi-zh">不含。基础、钢筋、灌芯混凝土和过梁取决于结构设计与当地规范，本工具只估算砌块数量与砌筑砂浆。</span></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="container" style="max-width:860px">
+      <h2><span class="bi-en">Other estimators</span><span class="bi-zh">其他计算器</span></h2>
+      <ul class="related-list">
+        <li><a href="concrete-calculator.html"><span class="bi-en">Concrete Calculator</span><span class="bi-zh">混凝土用量计算器</span></a></li>
+        <li><a href="paint-calculator.html"><span class="bi-en">Paint Calculator</span><span class="bi-zh">油漆用量计算器</span></a></li>
+        <li><a href="tile-calculator.html"><span class="bi-en">Tile &amp; Flooring Calculator</span><span class="bi-zh">瓷砖与地板用量计算器</span></a></li>
+        <li><a href="drywall-calculator.html"><span class="bi-en">Drywall Calculator</span><span class="bi-zh">石膏板用量计算器</span></a></li>
+        <li><a href="roofing-calculator.html"><span class="bi-en">Roofing Calculator</span><span class="bi-zh">屋面材料计算器</span></a></li>
+        <li><a href="deck-calculator.html"><span class="bi-en">Deck Board Calculator</span><span class="bi-zh">木平台板材计算器</span></a></li>
+        <li><a href="fence-calculator.html"><span class="bi-en">Fence Calculator</span><span class="bi-zh">围栏材料计算器</span></a></li>
+        <li><a href="gravel-calculator.html"><span class="bi-en">Gravel, Sand &amp; Mulch Calculator</span><span class="bi-zh">碎石、沙与覆盖物用量计算器</span></a></li>
+        <li><a href="stair-calculator.html"><span class="bi-en">Stair Calculator</span><span class="bi-zh">楼梯踏步计算器</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="tagline" data-i18n="footer_tagline">Estimora — private, browser-based construction material estimators.</p>
+    <p><a href="../privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+    <p class="disclaimer" data-i18n="footer_disclaimer">Estimora is an estimating aid for planning and budgeting, not an engineering service.</p>
+    <p class="rights" data-i18n="footer_rights">© 2026 Estimora. All calculations run locally in your browser.</p>
+  </div>
+</footer>
+
+<script>window.ESTIMORA_TOOL = "masonry";</script>
+<script src="../app.js"></script>
+</body>
+</html>
